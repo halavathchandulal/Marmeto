@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-images {
+    flex: 1 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  #main-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #EDF0F8;
+    padding: 10px;
+    cursor: pointer;
+    background-size: cover;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    flex: 1 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .vendor {
+    color: #888;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .price {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .current-price {
+    font-size: 28px;
+    color: blue;
+    margin-right: 10px;
+  }
+  
+  .compare-at-price {
+    font-size: 18px;
+    text-decoration: underline;
+    color: #888;
+  }
+  
+  .percent-off {
+    font-size: 18px;
+    color: red;
+    margin-left: 10px;
+  }
+  
+  .variants,
+  .quantity {
+    margin: 10px 0;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select,
+  input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .cart-message {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .product-images,
+    .product-details {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

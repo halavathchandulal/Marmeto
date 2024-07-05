@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-images">
+            <img id="main-image" class="main-image" src="./img1.png" alt="Product Image">
+            <div class="thumbnails" id="thumbnails"></div>
+        </div>
+        <div class="product-details">
+            <h2 class="vendor" id="vendor"></h2>
+            <h1 class="title" id="title"></h1>
+            <div class="price">
+                <span class="current-price" id="current-price"></span>
+                <span class="compare-at-price" id="compare-at-price"></span>
+                <span class="percent-off" id="percent-off"></span>
+            </div>
+            <div class="variants">
+                <label for="color">Color:</label>
+                <select id="color"></select>
+                <label for="size">Size:</label>
+                <select id="size"></select>
+            </div>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            <button id="add-to-cart">Add to Cart</button>
+            <div id="cart-message" class="cart-message"></div>
+            <div class="description" id="description"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
